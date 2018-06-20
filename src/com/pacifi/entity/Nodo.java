@@ -5,7 +5,8 @@ import java.util.List;
 public class Nodo {
 
     private Punto punto;
-
+    private int distanciaTemporal;
+    private int distanciaFinal;
     private List<Arista> nodos;
 
     public Punto getPunto() {
@@ -16,6 +17,22 @@ public class Nodo {
         this.punto = punto;
     }
 
+    public int getDistanciaTemporal() {
+        return distanciaTemporal;
+    }
+
+    public void setDistanciaTemporal(int distanciaTemporal) {
+        this.distanciaTemporal = distanciaTemporal;
+    }
+
+    public int getDistanciaFinal() {
+        return distanciaFinal;
+    }
+
+    public void setDistanciaFinal(int distanciaFinal) {
+        this.distanciaFinal = distanciaFinal;
+    }
+
     public List<Arista> getNodos() {
         return nodos;
     }
@@ -23,4 +40,5 @@ public class Nodo {
     public void setNodos(List<Arista> nodos) {
         this.nodos = nodos;
     }
+
 }
