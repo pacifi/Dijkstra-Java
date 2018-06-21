@@ -41,4 +41,8 @@ public class Nodo {
         this.nodos = nodos;
     }
 
+
+    public String toString() {
+        return (this.punto.getId() + " " + this.getDistanciaTemporal() + " " + this.distanciaFinal);
+    }
 }

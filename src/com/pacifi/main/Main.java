@@ -12,9 +12,8 @@ public class Main {
         Util util = new Util();
 
 
-        List<Punto> listaPuntos = util.CrearPuntos();
-        System.out.println(listaPuntos);
-
+        List<Nodo> listaNodo = util.CrearNodos();
+        util.ListarNodos(listaNodo);
 
     }
 
