@@ -16,7 +16,10 @@ Lenguaje
 
 Creditos
 ========
-* .. _Python: https://www.youtube.com/watch?v=4I7W5WUQQQI
+
+* Python_.
+
+.. _Python: https://www.youtube.com/watch?v=4I7W5WUQQQI
 
 Autor
 =====
