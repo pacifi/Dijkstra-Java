@@ -10,8 +10,15 @@ public class Main {
         Util util = new Util();
 
 
-        List<Nodo> listaNodo = util.CrearNodos();
+        List<Nodo> listaNodo = util.crearGrafo();
+        listaNodo = util.nodoInicialFinal(listaNodo, "a", "o");
+
+        listaNodo = util.diskstra(listaNodo);
+        List<Nodo> ruta = util.caminoMinimo(listaNodo);
+
         util.ListarNodos(listaNodo);
+        util.ListarNodos(ruta);
+
 
     }
 

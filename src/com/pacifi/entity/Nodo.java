@@ -8,7 +8,35 @@ public class Nodo {
     private String id;
     private int distanciaTemporal;
     private int distanciaFinal;
+    private boolean nodoInicial;
+    private boolean nodoFinal;
+
+    public static int VALOR_COMPARACION = 1000000000;
+
+    public boolean getNodoInicial() {
+        return nodoInicial;
+    }
+
+    public void setNodoInicial(boolean nodoInicial) {
+        this.nodoInicial = nodoInicial;
+    }
+
+    public boolean getNodoFinal() {
+        return nodoFinal;
+    }
+
+    public void setNodoFinal(boolean nodoFinal) {
+        this.nodoFinal = nodoFinal;
+    }
+
     Map<String, Integer> nodos;
+
+    public Nodo() {
+        this.distanciaTemporal = VALOR_COMPARACION;
+        this.distanciaFinal = VALOR_COMPARACION;
+        this.nodoInicial = false;
+        this.nodoFinal = false;
+    }
 
     public Map<String, Integer> getNodos() {
         return nodos;
@@ -44,7 +72,8 @@ public class Nodo {
 
 
     public String toString() {
-        return (this.getId() + " " + this.getDistanciaTemporal() + " " + this.distanciaFinal + " nodos:" + this.getNodos())
+        return (this.getId() + " " + this.getDistanciaFinal() + " " + this.getDistanciaTemporal() + " nodos:"
+                + this.getNodos() + ((this.getNodoInicial() == true) ? "Nodo Inicial" : "") + ((this.getNodoFinal() == true) ? "Nodo Final" : ""))
                 ;
     }
 }
