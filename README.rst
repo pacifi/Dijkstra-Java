@@ -16,7 +16,7 @@ Lenguaje
 
 Creditos
 ========
-* .. dikstra: https://www.youtube.com/watch?v=4I7W5WUQQQI
+* .. _Python: https://www.youtube.com/watch?v=4I7W5WUQQQI
 
 Autor
 =====
