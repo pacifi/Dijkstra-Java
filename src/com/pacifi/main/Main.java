@@ -1,10 +1,8 @@
 package com.pacifi.main;
 
 import com.pacifi.entity.Nodo;
-import com.pacifi.entity.Punto;
 import com.pacifi.utils.Util;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {

@@ -1,20 +1,29 @@
 package com.pacifi.entity;
 
 import java.util.List;
+import java.util.Map;
 
 public class Nodo {
 
-    private Punto punto;
+    private String id;
     private int distanciaTemporal;
     private int distanciaFinal;
-    private List<Arista> nodos;
+    Map<String, Integer> nodos;
 
-    public Punto getPunto() {
-        return punto;
+    public Map<String, Integer> getNodos() {
+        return nodos;
     }
 
-    public void setPunto(Punto punto) {
-        this.punto = punto;
+    public void setNodos(Map<String, Integer> nodos) {
+        this.nodos = nodos;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public int getDistanciaTemporal() {
@@ -33,16 +42,9 @@ public class Nodo {
         this.distanciaFinal = distanciaFinal;
     }
 
-    public List<Arista> getNodos() {
-        return nodos;
-    }
-
-    public void setNodos(List<Arista> nodos) {
-        this.nodos = nodos;
-    }
-
 
     public String toString() {
-        return (this.punto.getId() + " " + this.getDistanciaTemporal() + " " + this.distanciaFinal);
+        return (this.getId() + " " + this.getDistanciaTemporal() + " " + this.distanciaFinal + " nodos:" + this.getNodos())
+                ;
     }
 }
