@@ -1,6 +1,6 @@
-=====================
-Algoritmo de Dikstra.
-=====================
+======================
+Algoritmo de Dijkstra.
+======================
 
 Algoritmo de Dijkstra. También llamado algoritmo de caminos mínimos, es un algoritmo para la determinación del
 camino más corto dado un vértice origen al resto de vértices en un grafo con pesos en cada arista.
